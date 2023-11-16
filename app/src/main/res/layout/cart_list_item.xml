@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkBoxSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        tools:ignore="TouchTargetSizeCheck" />
+    <ImageView
+        android:id="@+id/imageViewBuying"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/default_goods"
+        android:background="@color/white"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/GoodsNameBuying"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="10"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GoodsPriceBuying"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="TextView" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/goodsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/addgoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/numadd"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/good_num"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/addgoods"
+            android:gravity="center"
+            android:text="1"/>
+
+        <ImageButton
+            android:id="@+id/deletegoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/good_num"
+            android:src="@drawable/numsub"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+</LinearLayout>

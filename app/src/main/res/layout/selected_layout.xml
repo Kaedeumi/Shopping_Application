@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RadioGroup
+        android:id="@+id/sortlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/man"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DDDADA"
+            android:text="Men's"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/women"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/man"
+            android:backgroundTint="#DDDADA"
+            android:text="Women's"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/makeup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/women"
+            android:backgroundTint="#DDDADA"
+            android:text="Cosmetics"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/snack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/makeup"
+            android:backgroundTint="#DDDADA"
+            android:text="Snacks"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/child"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/snack"
+            android:backgroundTint="#DDDADA"
+            android:text="Children's"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_below="@+id/child"
+            android:backgroundTint="#DDDADA"
+            android:text="Daily supplies"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reViewGoods"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/sortlist"
+        android:clipToPadding="false"
+
+        android:paddingBottom="8dp" />
+
+
+</RelativeLayout>

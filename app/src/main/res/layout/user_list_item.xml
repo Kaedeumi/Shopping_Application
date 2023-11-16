@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imageViewBought"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/default_goods"
+        android:background="@color/white"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/GoodsNameBought"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="10"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GoodsPriceBought"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="TextView" />
+
+</LinearLayout>

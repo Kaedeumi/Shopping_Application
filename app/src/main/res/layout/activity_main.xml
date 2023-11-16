@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ViewPager2"
+        />
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="#FBFBFA"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"
+            android:checked="true"
+
+            android:text="首页" />
+        <RadioButton
+            android:id="@+id/rb_sort"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/sort_button_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/MainButtonStyle"
+
+            android:drawableTop="@drawable/cart_button_selector"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/personcenter_button_selector"
+
+            android:text="个人中心" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

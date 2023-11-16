@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imageViewPersonPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/loginpic" />
+
+    <TextView
+        android:id="@+id/loginusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPersonPhoto"
+        android:layout_marginTop="10dp"
+        android:text="Username:"
+        android:textColor="#050505"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewPersonPhoto"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/loginusername"
+
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usermoneyleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginusername"
+        android:layout_marginTop="10dp"
+        android:text="Balance:"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewPersonMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPersonName"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/usermoneyleft"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPersonName"
+        android:layout_marginTop="80dp"
+        android:id="@+id/userfragment_button">
+
+        <Button
+            android:id="@+id/buttonCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewPersonPhoto"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="Charge" />
+
+        <Button
+            android:id="@+id/buttonEsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_toRightOf="@+id/buttonCharge"
+            android:text="Sign Out" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userbuyingview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userfragment_button"/>
+
+
+</RelativeLayout>
