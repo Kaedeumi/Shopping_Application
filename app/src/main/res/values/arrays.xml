@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="delivery_options">
-        <item>顺丰</item>
-        <item>圆通</item>
-        <item>申通</item>
+        <item>DHL</item>
+        <item>FedEx</item>
+        <item>ParcelForce</item>
+        <item>Citylink</item>
     </string-array>
 
 
